@@ -198,11 +198,11 @@ public interface HelloWorld {
         if (appendable == null) {
             throw new NullPointerException("appendable is null");
         }
-//        final var array = new byte[BYTES];
-//        set(array);
-//        for (final var b : array) {
-//            appendable.append((char) b);
-//        }
+        final var array = new byte[BYTES];
+        set(array);
+        for (final var b : array) {
+            appendable.append((char) b);
+        }
         return appendable;
     }
 
