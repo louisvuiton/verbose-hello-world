@@ -389,7 +389,7 @@ public interface HelloWorld {
         }
         final var array = new byte[BYTES];
         set(array);
-//        output.write(array);
+        output.write(array);
         return output;
     }
 

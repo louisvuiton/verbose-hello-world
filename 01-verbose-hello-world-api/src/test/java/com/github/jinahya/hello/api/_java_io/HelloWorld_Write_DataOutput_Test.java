@@ -77,7 +77,7 @@ class HelloWorld_Write_DataOutput_Test
         final var result = service.write(output);
         // ------------------------------------------------------------------------------------ then
         final var array = set_array12_invoked_once(service);
-//        verify(output, times(1)).write(array);
+        verify(output, times(1)).write(array);
         assertSame(output, result);
     }
 }
